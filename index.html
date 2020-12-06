@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Sidebar1.3 w/ Text</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+    <script type="text/javascript" src="jquery-ui-touch.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="InitThis();">
+    <div class="toolbar-back">
+
+    </div>
+
+    <div class="toggle-btn">
+      <input type="checkbox" id="checkbox" onclick="changeb()" class="cb-value" />
+      <span class="round-btn"></span>
+    </div>
+
+    <img id="logo" src="swm-logo.png" alt="" height="70px" width="68px">
+
+    <div class="blockContainer">
+        <img id="thou" src="img/1000.png" alt="" height="60px" width="60px" onclick="addThou();">
+        <img id="hun" src="img/100.png" alt="" height="60px" width="60px" onclick="addHun();">
+        <img id="ten" src="img/101.png" alt="" height="60px" width="15px" onclick="addTen();">
+        <img id="one" src="img/1.png" alt="" height="60px" width="60px" onclick="addOne();">
+    </div>
+
+    <div class="thoudiv">
+
+    </div>
+    <div class="hundiv">
+
+    </div>
+    <div class="tendiv">
+
+    </div>
+    <div class="onediv">
+
+    </div>
+
+    <button id="reset" type="button" onclick="reloadPage();"><i class="fas fa-sync-alt"></i></button>
+    <button id="undo" type="button" name="button" id="undo-button"><i class="fas fa-undo"></i></button>
+
+    <button id="delete" type="button" name="button" id="rem-button"><i class="fas fa-trash"></i></button>
+    <button id="ungroup" type="button" name="button" id="un-button"><i class="far fa-object-ungroup"></i></button>
+    <button id ="regroup" type="button" name="button" id="brk-button"><i class="far fa-object-group"></i></button>
+
+
+    <div class="sumback">
+      <img id ="sumtable" src="sum.png" alt="">
+    </div>
+    <div class="subback">
+      <img id ="subtable" src="sub.png" alt="">
+    </div>
+
+
+    <canvas id="myCanvas" height="820px" width="1220px" ></canvas>
+
+    <nav class="menu">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+      <label class="menu-open-button" for="menu-open">
+        <span class="hamburger hamburger-1"></span>
+        <span class="hamburger hamburger-2"></span>
+        <span class="hamburger hamburger-3"></span>
+      </label>
+
+      <a href="#" class="menu-item" id="draw-button"> <i class="fa fa-pencil menic"></i> </a>
+      <a href="#" class="menu-item" id="er-button"> <i class="fa fa-eraser menic"></i> </a>
+      <a href="#" class="menu-item" id="interact-button"> <i class="fa fa-mouse-pointer menic"></i> </a>
+      <a href="#" class="menu-item" id="textbox-button"> <i class="fas fa-text menic"></i> </a>
+      <a href="#" class="reset-draw menu-item" id="resetd-button" onclick="clearArea();"> <i class="fas fa-sync-alt menic"></i> </a>
+      <a href="#" class="menu-item colors">
+
+        <div id="PanteneColor">
+          <div class="PanteneColor">
+            <div class="color maincolor"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+          <div class="PanteneColor">
+            <div class="color"></div>
+          </div>
+        </div>
+       </a>
+    </nav>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-9ZfPnbegQSumzaE7mks2IYgHoayLtuto3AS6ieArECeaR8nCfliJVuLh/GaQ1gyM" crossorigin="anonymous">
+    <script src="script.js" charset="utf-8"></script>
+
+  </body>
+</html>
